@@ -1,0 +1,67 @@
+/* Cai dat chung */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 30px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Khung menu */
+#menu {
+  height: 40px;
+  border: 1px solid #ccc;
+  background-color: black;
+}
+
+/* Danh sach menu chinh */
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cac muc menu */
+#menu ul li {
+  position: relative;
+  float: left;
+}
+
+/* Lien ket trong menu */
+#menu ul li a {
+  display: block;
+  width: 120px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+/* Hieu ung khi di chuot */
+#menu ul li a:hover {
+  background-color: red;
+}
+
+/* Vi tri menu con */
+#menu ul ul {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  visibility: hidden;
+}
+
+/* Hien thi menu con khi di chuot */
+#menu ul li:hover > ul {
+  visibility: visible;
+}
